@@ -1,9 +1,55 @@
 {# index.twig #}
 
 {% block footer %}
-	<header>
+<header class ="header">
 	<div class="container">
-
+		<div class="info_block">
+			<ul class="info_block__list">
+				<li class="info_block__list-item">
+					<a href="#" class="info_block__list-item-link">
+						<img src="img/Vector1.svg" alt="Point" class="mark">
+						<h3 class="info_position">Махачкала</h3>
+					</a>
+				</li>
+				<li class="info_block__list-item">
+					<a href="#" class="info_block__list-item-link info_position">Магазины</a>
+				</li>
+				<li class="info_block__list-item info_block__list-item--hover info_position info_position--margin">
+					<span>Покупателям</span>
+					<ul class="info_block__list-item-list">
+						<li class="info_block__list-item-list-item">123</li>
+						<li class="info_block__list-item-list-item">321</li>
+					</ul>
+				</li>
+				<li class="info_block__list-item info_block__list-item--hover">
+					<a href="#" class="info_block__list-item-link info_position">Юридическим лицам</a>
+					<ul class="info_block__list-item-list">
+						<li class="info_block__list-item-list-item">456</li>
+						<li class="info_block__list-item-list-item">654</li>
+					</ul>
+				</li>
+			</ul>
+			<!-- <a href="#" class="shop_link">Магазин</a> -->
+			<!-- <form class="buy_form">
+				<p><select name="Покупателям" class="buy_list">
+					<optgroup label="Покупателям">
+						<option value="r1">Покупателям</option>
+						<option value="r2">Товары</option>
+						<option value="r3">Ссылки</option>
+					</optgroup>
+				</select></p>
+			</form> -->
+			<!-- <form class="jur_form">
+				<p><select name="Юридическим лицам" class="juridical_list">
+					<optgroup label="Юридическим лицам">
+						<option value="r4">Юридическим лицам</option>
+						<option value="r5">Лицензия</option>
+						<option value="r6">Кампания</option>
+					</optgroup>
+				</select></p>
+			</form> -->
+			 <a href="tel:+8-800-999-99-99" class="tel_link">8-800-999-99-99 (c 03:00 до 22:00)</a>
+		</div>
 	</div>
-	</header>
+</header>
 {% endblock %}

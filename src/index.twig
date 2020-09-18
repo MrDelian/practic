@@ -1,711 +1,709 @@
 {% extends "layouts/layout.twig" %}
 
 {% block page %}
-	<header class="header">
-		<div class="container">
-			<div class="info_block">
-				<nav class="shop">
-					<a href="#"><img src="img/Vector1.svg" alt="Point" class="mark"></a>
-					<h1 class="info_position">Махачкала</h1>
-					<a href="#" class="shop_link">Магазин</a>
-					  <form class="buy_form">
-					   <p><select name="Покупателям" class="buy_list">
-					    <optgroup label="Покупателям">
-					     <option value="r1">Покупателям</option>
-					     <option value="r2">Товары</option>
-					     <option value="r3">Ссылки</option>
-					    </optgroup>
-					   </select></p>
-					  </form>
-					  <form class="jur_form">
-					  	<p><select name="Юридическим лицам" class="juridical_list">
-					  		<optgroup label="Юридическим лицам">
-					  			<option value="r4">Юридическим лицам</option>
-					  			<option value="r5">Лицензия</option>
-					  			<option value="r6">Кампания</option>
-					  		</optgroup>
-					  	</select></p>
-					  </form>
-					<a href="tel:+8-800-999-99-99" class="tel_link">8-800-999-99-99 (c 03:00 до 22:00)</a>
-				</nav>
+<section class="search_section">
+	<div class="container">
+		<div class="main">
+			<img src="img/Vector.svg" alt="Логотип">
+			<div class="search_field">
+				<form class="search_form">
+					<input type="search" placeholder="Быстрый поиск" class="search">
+					<button type="submite" class="search_button">
+						<img src="img/Frame.svg" alt="поиск">
+					</button>
+				</form>
 			</div>
+			<button type="submite" class="Favorite_button">
+				<img src="img/VectorH.svg" alt="Heart" class="Heart">
+				<h5 class="Favorite">Избранное</h5>
+				<span class="message">3</span>
+			</button>
+			<button type="submite" class="Compare_button">
+				<img src="img/VectorJ.svg" alt="Libra" class="libra">
+				<h5 class="Compare">Сравнить</h5>
+			</button>
+			<button type="submite" class="Basket_button">
+				<img src="img/Basket.svg" alt="Truck" class="truck">
+				<h5 class="Basket">Корзина</h5>
+				<span class="message">7</span>
+			</button>
 		</div>
-	</header>
-	<section class="section">
-		<div class="container">
-			<div class="logo">
-				<img src="img/Vector.svg" alt="Логотип">
-				<div class="search_field">
-					<form>
-						<input type="search" placeholder="Быстрый поиск" class="search">
-						<button type="submite">
-							<img src="img/Frame.svg" alt="поиск">
-						</button>
-					</form>
-				</div>
-				<button type="submite" class="Favorite_button">
-					<img src="img/VectorH.svg" alt="Heart" class="Heart">
-					<h5 class="Favorite">Избранное</h5>
-				</button>
-				<button type="submite" class="Compare_button">
-					<img src="img/VectorJ.svg" alt="Libra" class="libra">
-					<h5 class="Compare">Сравнить</h5>
-				</button>
-				<button type="submite" class="Basket_button">
-					<img src="img/Basket.svg" alt="Truck" class="truck">
-					<h5 class="Basket">Корзина</h5>
-				</button>
-				<div class="menu">
-					<button type="submite" class="Catalog_button">
-						<img src="img/line.svg" alt="line" class="line">
-						<h5 class="catalog">Каталог</h5>
-					</button>
-					<button type="submite" class="Paper_button">
-						<img src="img/book.svg" alt="notepad" class="book">
-						<h5 class="paper">Бумажная продукция</h5>
-					</button>
-					<button type="submite" class="Product_button">
-						<img src="img/back.svg" alt="back" class="back">
-						<h5 class="product">Товары для школы</h5>
-					</button>
-					<button type="submite" class="Creation_button">
-						<img src="img/pencel.svg" alt="pencel" class="pencel">
-						<h5 class="Creation">Товары для творчества</h5>
-					</button>
-					<button type="submite" class="Trade_button">
-						<img src="img/calcu.svg" alt="calculator" class="calculator">
-						<h5 class="Trade">Товары для торговли</h5>
-					</button>
-					<button type="submite" class="Stock_button">
-						<img src="img/tag.svg" alt="tag" class="tag">
-						<h5 class="Stock">Скидки и акции</h5>
-					</button>
-						<button type="submite" class=" Filter_button">
-						<h5 class="Filter">Все фильтры</h5>
-					</button>
-					<button type="submite" class="Home_page">Главная</button>
-					<button type="submite" class="Paper_page"> > Бумажная продукция </button>
-					<button type="submite" class="Diaries_page"> >  Ежедневники, еженедельники</button>
-			  	</div>
-			</div>
+		<div class="search_field">
+			<ul class="search_field__list">
+				<li class="search_field__list catalog__list"><a href="#" class="catalog__link"><img src="img/line.svg" alt="" class="catalog__img">Каталог</a></li>
+				<li class="search_field__list product__list"><a href="#" class="product__link"><img src="img/book.svg" alt="" class="product__img"><span>Бумажная продукция</span></a></li>
+				<li class="search_field__list school__list"><a href="#" class="school__link"><img src="img/back.svg" alt="" class="school__img">Товары для школы</a></li>
+				<li class="search_field__list creation__list"><a href="#" class="creation__link"><img src="img/pencel.svg" alt="" class="creation__img">Товары для творчества</a></li>
+				<li class="search_field__list trade__list"><a href="#" class="trade__link"><img src="img/calcu.svg" alt="" class="trade__img">Товары для торговли</a></li>
+				<li class="search_field__list sale__list"><a href="#" class="sale__link"><img src="img/tag.svg" alt="" class="sale__img">Скидки и акции</a></li>
+			</ul>
 		</div>
-	</section>
-	<section class="section">
-		<h1 class="Diaries">Ежедневники, еженедельники</h1>
+		<div class="page_field">
+			<ul class="page_field__list">
+				<li class="page__home"><a href="#">Главная</a></li>
+				<li class="page__paper"><a href="#"><img src="img/arrow.svg" class="page__arrow">Бумажная продукция</a></li>
+				<li class="page__diaries"><a href="#"><img src="img/arrow.svg" class="page__arrow">Ежедневники, еженедельники</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section class="section_bar">
+	<div class="container">
+		<h3 class="text__diaries">Ежедневники, еженедельники</h3>
+		<div class="duo_content">
 			<div class="sidebar">
-				<h6  class="prise">Цена</h6>
-					<div class="g-range-slider _range-slider-wrap">
-						<div class="_range-slider"
+				<span  class="prise">Цена</span>
+				<div class="g-range-slider _range-slider-wrap">
+					<div class="_range-slider"
 						data-min="{{min: 100}}"
 						data-max="{{max: 10000}}"
 						data-start="{{start: [0,7000]}}"
-						></div>
-							<input type="hidden" class="_min">
-							<input type="hidden" class="_max">
+					></div>
+					<input type="hidden" class="_min">
+					<input type="hidden" class="_max">
 					<div class="g-range-slider__labels">
 						<div class="_label-from">0</div>
 						<div class="_label-to">0</div>
 					</div>
+				</div>
+				<span class="ot">Oт</span>
+				<label class="g-input">
+					<input name="name" type="text" class="g-input__input" placeholder="16">
+					<div class="g-input__sub">Error: invalid name</div>
+				</label>
+				<span class="do">До</span>
+				<label class="g-input_error">
+					<input name="name" type="text" class="g-input__input" placeholder="2408999">
+					<div class="g-input__sub">Error: invalid name</div>
+				</label>
+				<h4  class="brands__text">Бренды</h4>
+				<label class="g-input-brands">
+					<input name="name" type="text" class="g-input__input__brands" placeholder="Найти">
+					<div class="g-input__sub">Error: invalid name</div>
+				</label>
+				<div class="a_check">
+					<h4>A</h4>
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Action!</span>
+						</div>
+					</label>
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">ArtFox</span>
+						</div>
+					</label>
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Artlez</span>
+						</div>
+					</label>
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Attach</span>
+						</div>
+					</label>
+				</div>
+				<h4>B</h4>
+				<label class="g-checkbox">
+					<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+					<div class="g-checkbox__body">
+						<span class="g-checkbox__box"></span>
+						<span class="g-checkbox__text">Belyas</span>
 					</div>
-			<span class="ot">Oт</span>
-			<label class="g-input">
-			<input name="name" type="text" class="g-input__input" placeholder="16">
-			<div class="g-input__sub">Error: invalid name</div>
-		</label>
-		<span class="do">До</span>
-		<label class="g-input_error">
-			<input name="name" type="text" class="g-input__input" placeholder="2408999">
-			<div class="g-input__sub">Error: invalid name</div>
-		</label>
-
-  <div class="brands">
-  	<h4  class="brands__text">Бренды</h4>
-  	<label class="g-input-brands">
-	<input name="name" type="text" class="g-input__input__brands" placeholder="Найти">
-	<div class="g-input__sub">Error: invalid name</div>
-</label>
-
-	<div class="a_check">
-		<h4>A</h4>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">Action!</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-		</div>
-	</label>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">ArtFox</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-		</div>
-	</label>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">Artlez</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-		</div>
-	</label>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">Attach</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-		</div>
-	</label>
-	</div>
-
-<div class="b_check">
-<h4>B</h4>
-<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">Belyas</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-		</div>
-	</label>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">Berlingo</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-		</div>
-	</label>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">Berlingo</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-		</div>
-	</label>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">Braumann</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-		</div>
-	</label>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-			<h3 class="check_act">Bruno Visconti</h3>
-			<div class="g-checkbox__body_A">
-				<span class="g-checkbox__text"></span>
-			</div>
-	</label>
-
-	<h4  class="B">B</h4>
-	<a href="#" class="coll_button">Свернуть</a>
-</div>
-	<div class="hit_block">
-		<h4 class="hit">Хит продаж</h4>
-			<label class="switch">
-  				<input type="checkbox">
-  				<span class="slider round"></span>
-			</label>
-	</div>
-	<div class="stock_block">
-		<h4 class="hit">Акция</h4>
-			<label class="switch">
-  				<input type="checkbox">
-  				<span class="slider round"></span>
-			</label>
-	</div>
-	<div class="type">
-		<h4>Тип</h4>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">Ежедневник</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-		</div>
-	</label>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">Еженедельник</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-		</div>
-	</label>
-  </div>
-  <div class="size">
-		<h4>Формат/размеры</h4>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">А5 (148 х 210 мм)</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-		</div>
-	</label>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">А6 (105 х 148 мм)</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-		</div>
-	</label>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">14 х 20 см</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-		</div>
-	</label>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">15 х 21 см</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-		</div>
-	</label>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">9 х 14 см</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-			<a href="#" class="check_all">Посмотреть все</a>
-		</div>
-	</label>
-	 <div class="cover">
-	 <h4>Обложка</h4>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">Искусственная кожа</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-		</div>
-	</label>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">Картон</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-		</div>
-	</label>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">Ламинированный картон</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-		</div>
-	</label>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">ПВХ (поливинилхлорид)</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-		</div>
-	</label>
-	<label class="g-checkbox_A">
-		<input type="checkbox" name="" class="g-checkbox__input_A">
-		<h3 class="check_act">Бумага</h3>
-		<div class="g-checkbox__body_A">
-			<span class="g-checkbox__text"></span>
-			<a href="#" class="check_all">Посмотреть все</a>
-		</div>
-	</label>
-  </div>
-  		<h6 class="paper_col">Количество листов, шт</h6>
-  			<div class="paper_slider">
+				</label>
+				<label class="g-checkbox">
+					<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+					<div class="g-checkbox__body">
+						<span class="g-checkbox__box"></span>
+						<span class="g-checkbox__text">Berlingo</span>
+					</div>
+				</label>
+				<label class="g-checkbox">
+					<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+					<div class="g-checkbox__body">
+						<span class="g-checkbox__box"></span>
+						<span class="g-checkbox__text">Brauberg</span>
+					</div>
+				</label>
+				<label class="g-checkbox">
+					<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+					<div class="g-checkbox__body">
+						<span class="g-checkbox__box"></span>
+						<span class="g-checkbox__text">Braumann</span>
+					</div>
+				</label>
+				<label class="g-checkbox">
+					<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+					<div class="g-checkbox__body">
+						<span class="g-checkbox__box"></span>
+						<span class="g-checkbox__text">Bruno Visconti</span>
+					</div>
+				</label>
+				<h4  class="B">B</h4>
+				<a href="#" class="coll_button">Свернуть</a>
+				<div class="hit_block">
+					<h4 class="hit">Хит продаж</h4>
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider round"></span>
+					</label>
+				</div>
+				<div class="stock_block">
+					<h4 class="hit">Акция</h4>
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider round"></span>
+					</label>
+				</div>
+				<div class="type">
+				<h4>Тип</h4>
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Ежедневник</span>
+						</div>
+					</label>
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Еженедельник</span>
+						</div>
+					</label>
+					<div class="size__bar">
+						<h4>Формат/размеры</h4>
+						<label class="g-checkbox">
+							<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+							<div class="g-checkbox__body">
+								<span class="g-checkbox__box"></span>
+								<span class="g-checkbox__text">А5 (148 х 210 мм)</span>
+							</div>
+						</label>
+						<label class="g-checkbox">
+							<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+							<div class="g-checkbox__body">
+								<span class="g-checkbox__box"></span>
+								<span class="g-checkbox__text">А6 (105 х 148 мм)</span>
+							</div>
+						</label>
+						<label class="g-checkbox">
+							<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+							<div class="g-checkbox__body">
+								<span class="g-checkbox__box"></span>
+								<span class="g-checkbox__text">14 х 20 см</span>
+							</div>
+						</label>
+						<label class="g-checkbox">
+							<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+							<div class="g-checkbox__body">
+								<span class="g-checkbox__box"></span>
+								<span class="g-checkbox__text">15 х 21 см</span>
+							</div>
+						</label>
+						<label class="g-checkbox">
+							<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+							<div class="g-checkbox__body">
+								<span class="g-checkbox__box"></span>
+								<span class="g-checkbox__text">9 х 14 см</span>
+							</div>
+						</label>
+						<div class="view__button">
+							<a href="#" class="view__link">Посмотреть все</a>
+						</div>
+					</div>
+				</div>
+				<div class="cover">
+					<h4>Обложка</h4>
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Искусственная кожа</span>
+						</div>
+					</label>
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Картон</span>
+						</div>
+					</label>
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Ламинированный картон</span>
+						</div>
+					</label>
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">ПВХ (поливинилхлорид)</span>
+						</div>
+					</label>
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Бумага</span>
+						</div>
+					</label>
+					<div class="view__button">
+						<a href="#" class="view__link">Посмотреть все</a>
+					</div>
+				</div>
+				<div class="paper_slider">
+					<h6 class="paper_col">Количество листов, шт</h6>
 					<div class="g-range-slider _range-slider-wrap">
 						<div class="_range-slider"
 						data-min="{{min: 100}}"
 						data-max="{{max: 10000}}"
 						data-start="{{start: [0,7000]}}"
 						></div>
-							<input type="hidden" class="_min">
-							<input type="hidden" class="_max">
+						<input type="hidden" class="_min">
+						<input type="hidden" class="_max">
 						<div class="g-range-slider__labels">
 							<div class="_label-from">0</div>
 							<div class="_label-to">0</div>
 						</div>
-				    </div>
-			</div>
-	<div class="input_paper">
-		<span class="ot">Oт</span>
-			<label class="g-input_n">
-			<input name="name" type="text" class="g-input__input" placeholder="32">
-			<div class="g-input__sub">Error: invalid name</div>
-		</label>
-		<span class="do">До</span>
-		<label class="g-input_error_n">
-			<input name="name" type="text" class="g-input__input" placeholder="336">
-			<div class="g-input__sub">Error: invalid name</div>
-		</label>
-	</div>
-	<div class="markup">
-		<h4 class="markup_text">Размета</h4>
-		<label class="g-checkbox_A">
-			<input type="checkbox" name="" class="g-checkbox__input_A">
-				<h3 class="check_act">В линейку</h3>
-					<div class="g-checkbox__body_A">
-						<span class="g-checkbox__text"></span>
 					</div>
-					<input type="checkbox" name="" class="g-checkbox__input_A">
-				<h3 class="check_act">Без разметки</h3>
-					<div class="g-checkbox__body_A">
-						<span class="g-checkbox__text"></span>
-					</button>
 				</div>
-		</label>
-	</div>
-</div>
-</section>
-
-<div class="product-item" style="margin-top: -1831px;margin-left:751px;width: 256px;
-height: 431px;">
-   <img src="img/skidka.svg" class="skidka">
-  <a href="#"><img src="img/pech.svg" class="pech"></a>
-  <div class="product-list">
-  	<img src="img/glstar.svg" alt="" class="glstar">
-  	<img src="img/lover.svg" alt="" class="lover">
-
-   	<div>
-   		<h3 class="pechat">Печать самонаборная<br> автоматическая Colop, Ø40мм, 2<br> круга</h3>
-      <span class="product_price">648,43 ₽</span>
-	</div>
-      <h6 class="old_price">780,45 ₽</h6>
-      <h6 class="kolv_numb">8</h6>
-      <a href="" class="C_button">Сравнить</a>
-		<button type="submite" class="kolv_butt">
-			<img src="img/minus.svg" alt="Кнопка" class="kolv_img" style="width:14px;">
-		</button>
-		<button type="submite" class="kolv_butt_b">
-			<img src="img/pluss.svg" alt="Кнопка" class="kolv_img_b" style="width:14px; height:14px;">
-		</button>
-  </div>
-</div>
-
-<div class="product-item" style="margin-top: 41px;margin-left:751px;width: 256px;
-height: 431px;">
-  <a href="#" class="testo_link"><img src="img/testo.svg" class="testo"></a>
-  <div class="product-list">
-  	<img src="img/grstar.svg" alt="" class="grstar">
-  	<img src="img/lover.svg" alt="" class="lover">
-   		<h3 class="pechat">Тесто для лепки Гамма "Малыш",<br> 08 цветов*25г, формочка</h3>
-      <span class="standart_price">106,65 ₽</span>
-      <a href="" class="C_button_S">Сравнить</a>
-      <a href="" class="pannier_button">В корзину</a>
-  </div>
-</div>
-
-<div class="product-item" style="margin-top: 40px;margin-left:751px;width: 256px;
-height: 431px;">
-   <img src="img/skidka.svg" class="skidka">
-  <a href="#"><img src="img/pech.svg" class="pech"></a>
-  <div class="product-list">
-  	<img src="img/glstar.svg" alt="" class="glstar">
-  	<img src="img/lover.svg" alt="" class="lover">
-   	<div>
-   		<h3 class="pechat">Печать самонаборная<br> автоматическая Colop, Ø40мм, 2<br> круга</h3>
-      <span class="product_price">648,43 ₽</span>
-	</div>
-      <h6 class="old_price">780,45 ₽</h6>
-      <h6 class="kolv_numb_n">8</h6>
-      <a href="" class="C_button">Сравнить</a>
-      <button type="submite" class="kolv_butt_n">
-			<img src="img/minus.svg" alt="Кнопка" class="kolv_img_n" style="width:14px;">
-		</button>
-		<button type="submite" class="kolv_butt_s">
-			<img src="img/pluss.svg" alt="Кнопка" class="kolv_img_s" style="width:14px; height:14px;">
-		</button>
-  </div>
-</div>
-
-<div class="product-item" style="margin-top: 32px;margin-left:751px;width: 256px;
-height: 431px;">
-  <a href="#" class="testo_link"><img src="img/testo.svg" class="testo"></a>
-  <div class="product-list">
-  	<img src="img/grstar.svg" alt="" class="grstar">
-  	<img src="img/lover.svg" alt="" class="lover">
-   		<h3 class="pechat">Тесто для лепки Гамма "Малыш",<br> 08 цветов*25г, формочка</h3>
-      <span class="standart_price">106,65 ₽</span>
-      <a href="" class="C_button_S">Сравнить</a>
-      <a href="" class="pannier_button">В корзину</a>
-  </div>
-</div>
-
-<div class="product-item" style="margin-top: 41px;margin-left:751px;width: 256px;
-height: 431px;">
-   <img src="img/skidka.svg" class="skidka">
-  <a href="#"><img src="img/pech.svg" class="pech"></a>
-  <div class="product-list">
-  	<img src="img/glstar.svg" alt="" class="glstar">
-  	<img src="img/lover.svg" alt="" class="lover">
-   	<div>
-   		<h3 class="pechat">Печать самонаборная<br> автоматическая Colop, Ø40мм, 2<br> круга</h3>
-      <span class="product_price">648,43 ₽</span>
-	</div>
-      <h6 class="old_price">780,45 ₽</h6>
-      <h6 class="kolv_numb_c">8</h6>
-      <a href="" class="C_button">Сравнить</a>
-      <button type="submite" class="kolv_butt_a">
-			<img src="img/minus.svg" alt="Кнопка" class="kolv_img_a" style="width:14px;">
-		</button>
-		<button type="submite" class="kolv_butt_c">
-			<img src="img/pluss.svg" alt="Кнопка" class="kolv_img_c" style="width:14px; height:14px;">
-		</button>
-  </div>
-</div>
-
-<div class="product-item" style="margin-top: 41px;margin-left:751px;width: 256px;
-height: 431px;">
-  <a href="#" class="testo_link"><img src="img/testo.svg" class="testo"></a>
-  <div class="product-list">
-  	<img src="img/grstar.svg" alt="" class="grstar">
-  	<img src="img/lover.svg" alt="" class="lover">
-   		<h3 class="pechat">Тесто для лепки Гамма "Малыш",<br> 08 цветов*25г, формочка</h3>
-      <span class="standart_price">106,65 ₽</span>
-      <a href="" class="C_button_S">Сравнить</a>
-      <a href="" class="pannier_button">В корзину</a>
-  </div>
-</div>
-
-<div class="product-item" style="margin-top: -2781px;margin-left:1042px;width: 256px;
-height: 431px;">
-   <img src="img/skid.svg" class="skidka">
-  <a href="#"><img src="img/backpack.svg" class="pech"></a>
-  <div class="product-list">
-  	<img src="img/rdstar.svg" alt="" class="glstar">
-  	<img src="img/lover.svg" alt="" class="lover">
-   	<div>
-   		<h3 class="pechat">Ранец Berlingo Expert "Hockey<br> league" 37*28*16см, 2 отделения,<br> 1 карман, анатомическая спинка</h3>
-      <span class="product_price_s">2575,85 ₽</span>
-	</div>
-      <h6 class="old_price_s">2920,50 ₽</h6>
-      <a href="" class="C_button">Сравнить</a>
-      <a href="" class="pannier_button_b">В корзину</a>
-  </div>
-</div>
-
-<div class="product-item" style="margin-top: 41px;margin-left:1042px;width: 256px;
-height: 431px;">
-  <a href="#"><img src="img/stand.svg" class="stand"></a>
-  <div class="product-list">
-  	<img src="img/grstar.svg" alt="" class="grstar">
-  	<img src="img/lover.svg" alt="" class="lover">
-   		<h3 class="pechat">Настольная подставка Berlingo<br> "Steel&Style", металлическая, 3<br> секции, черная</h3>
-      <span class="standart_price">337,32 ₽</span>
-      <a href="" class="C_button_N">Сравнить</a>
-      <a href="" class="pannier_button_n">В корзину</a>
-  </div>
-</div>
-
-<div class="product-item" style="margin-top: 40px;margin-left:1044px;width: 256px;
-height: 431px;">
-   <img src="img/skid.svg" class="skidka">
-  <a href="#"><img src="img/backpack.svg" class="pech"></a>
-  <div class="product-list">
-  	<img src="img/rdstar.svg" alt="" class="glstar">
-  	<img src="img/lover.svg" alt="" class="lover">
-   	<div>
-   		<h3 class="pechat">Ранец Berlingo Expert "Hockey<br> league" 37*28*16см, 2 отделения,<br> 1 карман, анатомическая спинка</h3>
-      <span class="product_price_s">2575,85 ₽</span>
-	</div>
-      <h6 class="old_price_s">2920,50 ₽</h6>
-      <a href="" class="C_button">Сравнить</a>
-      <a href="" class="pannier_button_b">В корзину</a>
-  </div>
-</div>
-
-<div class="product-item" style="margin-top: 32px;margin-left:1042px;width: 256px;
-height: 431px;">
-  <a href="#"><img src="img/stand.svg" class="stand"></a>
-  <div class="product-list">
-  	<img src="img/grstar.svg" alt="" class="grstar">
-  	<img src="img/lover.svg" alt="" class="lover">
-   		<h3 class="pechat">Настольная подставка Berlingo<br> "Steel&Style", металлическая, 3<br> секции, черная</h3>
-      <span class="standart_price">337,32 ₽</span>
-      <a href="" class="C_button_N">Сравнить</a>
-      <a href="" class="pannier_button_n">В корзину</a>
-  </div>
-</div>
-
-<div class="product-item" style="margin-top: 41px;margin-left:1044px;width: 256px;
-height: 431px;">
-   <img src="img/skid.svg" class="skidka">
-  <a href="#"><img src="img/backpack.svg" class="pech"></a>
-  <div class="product-list">
-  	<img src="img/rdstar.svg" alt="" class="glstar">
-  	<img src="img/lover.svg" alt="" class="lover">
-   	<div>
-   		<h3 class="pechat">Ранец Berlingo Expert "Hockey<br> league" 37*28*16см, 2 отделения,<br> 1 карман, анатомическая спинка</h3>
-      <span class="product_price_s">2575,85 ₽</span>
-	</div>
-      <h6 class="old_price_s">2920,50 ₽</h6>
-      <a href="" class="C_button">Сравнить</a>
-      <a href="" class="pannier_button_b">В корзину</a>
-  </div>
-</div>
-
-<div class="product-item" style="margin-top: 41px;margin-left:1042px;width: 256px;
-height: 431px;">
-  <a href="#"><img src="img/stand.svg" class="stand"></a>
-  <div class="product-list">
-  	<img src="img/grstar.svg" alt="" class="grstar">
-  	<img src="img/lover.svg" alt="" class="lover">
-   		<h3 class="pechat">Настольная подставка Berlingo<br> "Steel&Style", металлическая, 3<br> секции, черная</h3>
-      <span class="standart_price">337,32 ₽</span>
-      <a href="" class="C_button_N">Сравнить</a>
-      <a href="" class="pannier_button_n">В корзину</a>
-  </div>
-</div>
-
-<div class="product-item" style="margin-top: -2781px;margin-left:1331px;width: 256px;
-height: 431px;">
-   <img src="img/skid.svg" class="skidka">
-  <a href="#"><img src="img/Dispenser.svg" class="pech"></a>
-  <div class="product-list">
-  	<img src="img/flstar.svg" alt="" class="glstar">
-  	<img src="img/nheart.svg" alt="" class="lover">
-   	<div>
-   		<h3 class="pechat">Диспенсер настольный Berlingo<br> для канцелярской клейкой<br> ленты, ассорти</h3>
-      <span class="product_price">338,27 ₽</span>
-	</div>
-      <h6 class="old_price_s">475,38 ₽</h6>
-      <a href="" class="C_button">Сравнить</a>
-      <a href="" class="pannier_button_b">В корзину</a>
-  </div>
-</div>
-
-<div class="product-item" style="margin-top: 41px;margin-left:1331px;width: 256px;
-height: 431px;">
-  <a href="#"><img src="img/folder.svg" class="stand"></a>
-  <div class="product-list">
-  	<img src="img/flstar.svg" alt="" class="grstar">
-  	<img src="img/nheart.svg" alt="" class="lover">
-   		<h3 class="pechat">Папка с зажимом Berlingo<br> "Standard", 17мм, 700мкм, синяя</h3>
-      <span class="standart_price">54,68 ₽</span>
-      <a href="" class="C_button_B">Сравнить</a>
-      <a href="" class="pannier_button_s">В корзину</a>
-  </div>
-</div>
-
-<div class="product-item" style="margin-top: 41px;margin-left:1331px;width: 256px;
-height: 431px;">
-   <img src="img/skid.svg" class="skidka">
-  <a href="#"><img src="img/Dispenser.svg" class="pech"></a>
-  <div class="product-list">
-  	<img src="img/flstar.svg" alt="" class="glstar">
-  		<img src="img/nheart.svg" alt="" class="lover">
-  <div>
-  		<h3 class="pechat">Диспенсер настольный Berlingo<br> для канцелярской клейкой<br> ленты, ассорти</h3>
-      		<span class="product_price">338,27 ₽</span>
- </div>
-      <h6 class="old_price_s">475,38 ₽</h6>
-    	  <a href="" class="C_button">Сравнить</a>
-      <a href="" class="pannier_button_b">В корзину</a>
-  </div>
-</div>
-
-<div class="product-item" style="margin-top: 32px;margin-left:1331px;width: 256px;
-height: 431px;">
-  <a href="#"><img src="img/folder.svg" class="stand"></a>
-  <div class="product-list">
-  	<img src="img/flstar.svg" alt="" class="grstar">
-  	<img src="img/nheart.svg" alt="" class="lover">
-   		<h3 class="pechat">Папка с зажимом Berlingo<br> "Standard", 17мм, 700мкм, синяя</h3>
-      <span class="standart_price">54,68 ₽</span>
-      <a href="" class="C_button_B">Сравнить</a>
-      <a href="" class="pannier_button_s">В корзину</a>
-  </div>
-</div>
-
-<div class="product-item" style="margin-top: 40px;margin-left:1331px;width: 256px;
-height: 431px;">
-   <img src="img/skid.svg" class="skidka">
-  <a href="#"><img src="img/Dispenser.svg" class="pech"></a>
-  <div class="product-list">
-  	<img src="img/flstar.svg" alt="" class="glstar">
-  	<img src="img/nheart.svg" alt="" class="lover">
-   	<div>
-   		<h3 class="pechat">Диспенсер настольный Berlingo<br> для канцелярской клейкой<br> ленты, ассорти</h3>
-      <span class="product_price">338,27 ₽</span>
-	</div>
-      <h6 class="old_price_s">475,38 ₽</h6>
-      <a href="" class="C_button">Сравнить</a>
-      <a href="" class="pannier_button_b">В корзину</a>
-  </div>
-</div>
-
-<div class="product-item" style="margin-top: 41px;margin-left:1331px;width: 256px;
-height: 431px;">
-  <a href="#"><img src="img/folder.svg" class="stand"></a>
-  <div class="product-list">
-  	<img src="img/flstar.svg" alt="" class="grstar">
-  	<img src="img/nheart.svg" alt="" class="lover">
-   		<h3 class="pechat">Папка с зажимом Berlingo<br> "Standard", 17мм, 700мкм, синяя</h3>
-      <span class="standart_price">54,68 ₽</span>
-      <a href="" class="C_button_B">Сравнить</a>
-      <a href="" class="pannier_button_s">В корзину</a>
-  </div>
-</div>
-
-<div class="g-pagination">
-	<div class="g-pagination__numbers">
-		<div class="g-pagination__number">1</div>
-		<div class="g-pagination__number">2</div>
-		<div class="g-pagination__number">3</div>
-		<div class="g-pagination__number">4</div>
-		<div class="g-pagination__number">5</div>
-	</div>
-	</div>
-</div>
-
-	<section class="section_bar">
-				<div class="bar__up">
-					<a href="#"><span class="bar_text">В начало страницы</span></a>
+				<div class="input_paper">
+					<span class="ot">Oт</span>
+					<label class="g-input_n">
+						<input name="name" type="text" class="g-input__input" placeholder="32">
+						<div class="g-input__sub">Error: invalid name</div>
+					</label>
+					<span class="do">До</span>
+					<label class="g-input_error_n">
+						<input name="name" type="text" class="g-input__input" placeholder="336">
+						<div class="g-input__sub">Error: invalid name</div>
+					</label>
 				</div>
-	</section>
-
-	<footer class="footer_info">
-		<div class="footer_bar">
-			<div class="copy_bar">
-				<span class="copy">© 1998 – 2020 OOO «Канцпарк»</span>
-				<span class="guard">Все права защищены</span>
-				<div class="link_logo">
-					<a href="#"><img src="img/inst.png" alt="instagram"></a>
-					<a href="#"><img src="img/vk.png" alt="vkontakte"></a>
-					<a href="#"><img src="img/fb.png" alt="facebook"></a>
+				<div class="markup">
+					<h4 class="markup_text">Размета</h4>
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">В линейку</span>
+						</div>
+					</label>
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Без разметки</span>
+						</div>
+					</label>
+				</div>
+				<div class="filter__button">
+						<a href="#" class="filter_button"><span class="filter">Все фильтры</span></a>
 				</div>
 			</div>
-			<div class="other">
-				<span class="other_text">Разное</span>
-			<ul class="other_list">
-				<li><a href="#">Акции</a></li>
-				<li><a href="#">Клуб Канцпарк</a></li>
-				<li><a href="#">Гарантия</a></li>
-				<li><a href="#">Форум</a></li>
-				<li><a href="#">Охрана труда</a></li>
-			</ul>
-			</div>
-			<div class="j_face">
-				<span class="j_text">Юридическим лицам</span>
-				<ul class="j_list">
-					<li><a href="#">Подарочные сертификаты</a></li>
-					<li><a href="#">Эксклюзивные предложения</a></li>
-					<li><a href="#">Горячая линия</a></li>
-				</ul>
-			</div>
-			<div class="help">
-				<span class="help_text">Помощь</span>
-				<ul class="help_list">
-					<li><a href="#">Как сделать заказ</a></li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Оплата</a></li>
-					<li><a href="#">Безопасноть</a></li>
-				</ul>
-			</div>
-			<div class="about">
-				<span class="about_text">О компании</span>
-				<ul class="about_list">
-					<li><a href="#">Пресс-центр</a></li>
-					<li><a href="#">Вакансии</a></li>
-					<li><a href="#">Реквизиты</a></li>
-					<li><a href="#">О компании</a></li>
-				</ul>
+			<div class="content">
+				<div class="product-item">
+					<a href="#" class="pech__link">
+						<div class="product_skidka">
+							<span class="skidka">-25%</span>
+						</div>
+						<img src="img/pech.svg" class="pech"></a>
+					<div class="product-list">
+						<div class="product__rate">
+							<img src="img/glstar.svg" alt="" class="glstar">
+							<img src="img/lover.svg" alt="" class="lover">
+						</div>
+						<div>
+							<h3 class="pechat">Печать самонаборная<br> автоматическая Colop, Ø40мм, 2<br> круга</h3>
+						<div class="product__price">
+							<span class="new_price">648,43 ₽</span>
+							<span class="old_price">780,45 ₽</span>
+						</div>
+						</div>
+						<div class="product__button">
+							<a href="#" class="C_button">Сравнить</a>
+							<a href="#" class="minus__link"><img src="img/minus.svg" alt=""></a>
+							<span class="kov_numb">8</span>
+							<a href="#" class="plus__link"><img src="img/plus.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item">
+					<a href="#" class="testo_link"><img src="img/testo.svg" class="testo"></a>
+					<div class="product-list">
+						<div class="product__rate__gr">
+							<img src="img/grstar.svg" alt="" class="grstar">
+							<img src="img/lover.svg" alt="" class="lover">
+						</div>
+						<h3 class="pechat">Тесто для лепки Гамма "Малыш",<br> 08 цветов*25г, формочка</h3>
+						<div class="product__standart__price">
+							<span class="standart_price">106,65 ₽</span>
+						</div>
+						<div class="product__button">
+							<a href="#" class="C_button_S">Сравнить</a>
+							<a href="#" class="pannier_button">В корзину</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item">
+					<a href="#" class="pech__link">
+						<div class="product_skidka">
+							<span class="skidka">-25%</span>
+						</div>
+						<img src="img/pech.svg" class="pech"></a>
+					<div class="product-list">
+						<div class="product__rate">
+							<img src="img/glstar.svg" alt="" class="glstar">
+							<img src="img/lover.svg" alt="" class="lover">
+						</div>
+						<div>
+							<h3 class="pechat">Печать самонаборная<br> автоматическая Colop, Ø40мм, 2<br> круга</h3>
+						<div class="product__price">
+							<span class="new_price">648,43 ₽</span>
+							<span class="old_price">780,45 ₽</span>
+						</div>
+						</div>
+						<div class="product__button">
+							<a href="" class="C_button">Сравнить</a>
+							<a href="#" class="minus__link"><img src="img/minus.svg" alt=""></a>
+							<span class="kov_numb">8</span>
+							<a href="#" class="plus__link"><img src="img/plus.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item">
+					<a href="#" class="testo_link"><img src="img/testo.svg" class="testo"></a>
+					<div class="product-list">
+						<div class="product__rate__gr">
+							<img src="img/grstar.svg" alt="" class="grstar">
+							<img src="img/lover.svg" alt="" class="lover">
+						</div>
+						<h3 class="pechat">Тесто для лепки Гамма "Малыш",<br> 08 цветов*25г, формочка</h3>
+						<div class="product__standart__price">
+							<span class="standart_price">106,65 ₽</span>
+						</div>
+						<div class="product__button">
+							<a href="#" class="C_button_S">Сравнить</a>
+							<a href="#" class="pannier_button">В корзину</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item">
+					<a href="#" class="pech__link">
+						<div class="product_skidka">
+							<span class="skidka">-25%</span>
+						</div>
+						<img src="img/pech.svg" class="pech"></a>
+					<div class="product-list">
+						<div class="product__rate">
+							<img src="img/glstar.svg" alt="" class="glstar">
+							<img src="img/lover.svg" alt="" class="lover">
+						</div>
+						<div>
+							<h3 class="pechat">Печать самонаборная<br> автоматическая Colop, Ø40мм, 2<br> круга</h3>
+						<div class="product__price">
+							<span class="new_price">648,43 ₽</span>
+							<span class="old_price">780,45 ₽</span>
+						</div>
+						</div>
+						<div class="product__button">
+							<a href="" class="C_button">Сравнить</a>
+							<a href="#" class="minus__link"><img src="img/minus.svg" alt=""></a>
+							<span class="kov_numb">8</span>
+							<a href="#" class="plus__link"><img src="img/plus.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item">
+					<a href="#" class="testo_link"><img src="img/testo.svg" class="testo"></a>
+					<div class="product-list">
+						<div class="product__rate__gr">
+							<img src="img/grstar.svg" alt="" class="grstar">
+							<img src="img/lover.svg" alt="" class="lover">
+						</div>
+						<h3 class="pechat">Тесто для лепки Гамма "Малыш",<br> 08 цветов*25г, формочка</h3>
+						<div class="product__standart__price">
+							<span class="standart_price">106,65 ₽</span>
+						</div>
+						<div class="product__button">
+							<a href="#" class="C_button_S">Сравнить</a>
+							<a href="#" class="pannier_button">В корзину</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item">
+					<a href="#" class="back__link">
+						<div class="product_skidka">
+							<span class="skidka">-10%</span>
+						</div>
+						<img src="img/backpack.svg" class="pech"></a>
+					<div class="product-list">
+						<div class="product__rate">
+							<img src="img/rdstar.svg" alt="" class="glstar">
+							<img src="img/lover.svg" alt="" class="lover">
+						</div>
+						<div>
+							<h3 class="pechat">Ранец Berlingo Expert "Hockey<br> league" 37*28*16см, 2 отделения,<br> 1 карман, анатомическая спинка</h3>
+						<div class="product__price">
+							<span class="new_price">648,43 ₽</span>
+							<span class="old_price">780,45 ₽</span>
+						</div>
+						</div>
+						<div class="product__button">
+							<a href="#" class="C_button">Сравнить</a>
+							<a href="#" class="pannier_button_b">В корзину</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item">
+					<a href="#" class="stand__link"><img src="img/stand.svg" class="stand"></a>
+					<div class="product-list">
+						<div class="product__rate__stand">
+							<img src="img/grstar.svg" alt="" class="grstar">
+							<img src="img/lover.svg" alt="" class="lover">
+						</div>
+						<h3 class="pechat">Настольная подставка Berlingo<br> "Steel&Style", металлическая, 3<br> секции, черная</h3>
+						<div class="product__stand__price">
+							<span class="standart_price">337,32 ₽</span>
+						</div>
+						<div class="product__button">
+							<a href="#" class="C_button_N">Сравнить</a>
+							<a href="#" class="pannier_button_n">В корзину</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item">
+					<a href="#" class="back__link">
+						<div class="product_skidka">
+							<span class="skidka">-10%</span>
+						</div>
+						<img src="img/backpack.svg" class="pech"></a>
+					<div class="product-list">
+						<div class="product__rate">
+							<img src="img/rdstar.svg" alt="" class="glstar">
+							<img src="img/lover.svg" alt="" class="lover">
+						</div>
+						<div>
+							<h3 class="pechat">Ранец Berlingo Expert "Hockey<br> league" 37*28*16см, 2 отделения,<br> 1 карман, анатомическая спинка</h3>
+						<div class="product__price">
+							<span class="new_price">648,43 ₽</span>
+							<span class="old_price">780,45 ₽</span>
+						</div>
+						</div>
+						<div class="product__button">
+							<a href="#" class="C_button">Сравнить</a>
+							<a href="#" class="pannier_button_b">В корзину</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item">
+					<a href="#" class="stand__link"><img src="img/stand.svg" class="stand"></a>
+					<div class="product-list">
+						<div class="product__rate__stand">
+							<img src="img/grstar.svg" alt="" class="grstar">
+							<img src="img/lover.svg" alt="" class="lover">
+						</div>
+						<h3 class="pechat">Настольная подставка Berlingo<br> "Steel&Style", металлическая, 3<br> секции, черная</h3>
+						<div class="product__stand__price">
+							<span class="standart_price">337,32 ₽</span>
+						</div>
+						<div class="product__button">
+							<a href="#" class="C_button_N">Сравнить</a>
+							<a href="#" class="pannier_button_n">В корзину</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item">
+					<a href="#" class="back__link">
+						<div class="product_skidka">
+							<span class="skidka">-10%</span>
+						</div>
+						<img src="img/backpack.svg" class="pech"></a>
+					<div class="product-list">
+						<div class="product__rate">
+							<img src="img/rdstar.svg" alt="" class="glstar">
+							<img src="img/lover.svg" alt="" class="lover">
+						</div>
+						<div>
+							<h3 class="pechat">Ранец Berlingo Expert "Hockey<br> league" 37*28*16см, 2 отделения,<br> 1 карман, анатомическая спинка</h3>
+						<div class="product__price">
+							<span class="new_price">648,43 ₽</span>
+							<span class="old_price">780,45 ₽</span>
+						</div>
+						</div>
+						<div class="product__button">
+							<a href="#" class="C_button">Сравнить</a>
+							<a href="#" class="pannier_button_b">В корзину</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item">
+					<a href="#" class="stand__link"><img src="img/stand.svg" class="stand"></a>
+					<div class="product-list">
+						<div class="product__rate__stand">
+							<img src="img/grstar.svg" alt="" class="grstar">
+							<img src="img/lover.svg" alt="" class="lover">
+						</div>
+						<h3 class="pechat">Настольная подставка Berlingo<br> "Steel&Style", металлическая, 3<br> секции, черная</h3>
+						<div class="product__stand__price">
+							<span class="standart_price">337,32 ₽</span>
+						</div>
+						<div class="product__button">
+							<a href="#" class="C_button_N">Сравнить</a>
+							<a href="#" class="pannier_button_n">В корзину</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item">
+					<a href="#" class="dispenser__link">
+						<div class="product_skidka">
+							<span class="skidka">-10%</span>
+						</div>
+						<img src="img/Dispenser.svg" class="pech"></a>
+					<div class="product-list">
+						<div class="product__rate_fl">
+							<img src="img/flstar.svg" alt="" class="glstar">
+							<img src="img/nheart.svg" alt="" class="lover">
+						</div>
+						<div>
+							<h3 class="pechat">Диспенсер настольный Berlingo<br> для канцелярской клейкой<br> ленты, ассорти</h3>
+						<div class="product__price">
+							<span class="new_price">338,27 ₽</span>
+							<span class="old_price_s">475,38 ₽</span>
+						</div>
+						</div>
+						<div class="product__button">
+							<a href="" class="C_button">Сравнить</a>
+							<a href="" class="pannier_button_b">В корзину</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item">
+					<a href="#" class="folder__link"><img src="img/folder.svg" class="stand"></a>
+					<div class="product-list">
+						<div class="product__rate_fl">
+							<img src="img/flstar.svg" alt="" class="glstar">
+							<img src="img/nheart.svg" alt="" class="lover">
+						</div>
+						<h3 class="pechat">Папка с зажимом Berlingo<br> "Standard", 17мм, 700мкм, синяя</h3>
+						<div class="product__folder__price">
+							<span class="standart_price">54,68 ₽</span>
+						</div>
+						<div class="product__button">
+							<a href="#" class="C_button_N">Сравнить</a>
+							<a href="#" class="pannier_button_n">В корзину</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item">
+					<a href="#" class="dispenser__link">
+						<div class="product_skidka">
+							<span class="skidka">-10%</span>
+						</div>
+						<img src="img/Dispenser.svg" class="pech"></a>
+					<div class="product-list">
+						<div class="product__rate_fl">
+							<img src="img/flstar.svg" alt="" class="glstar">
+							<img src="img/nheart.svg" alt="" class="lover">
+						</div>
+						<div>
+							<h3 class="pechat">Диспенсер настольный Berlingo<br> для канцелярской клейкой<br> ленты, ассорти</h3>
+						<div class="product__price">
+							<span class="new_price">338,27 ₽</span>
+							<span class="old_price_s">475,38 ₽</span>
+						</div>
+						</div>
+						<div class="product__button">
+							<a href="" class="C_button">Сравнить</a>
+							<a href="" class="pannier_button_b">В корзину</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item">
+					<a href="#" class="folder__link"><img src="img/folder.svg" class="stand"></a>
+					<div class="product-list">
+						<div class="product__rate_fl">
+							<img src="img/flstar.svg" alt="" class="glstar">
+							<img src="img/nheart.svg" alt="" class="lover">
+						</div>
+						<h3 class="pechat">Папка с зажимом Berlingo<br> "Standard", 17мм, 700мкм, синяя</h3>
+						<div class="product__folder__price">
+							<span class="standart_price">54,68 ₽</span>
+						</div>
+						<div class="product__button">
+							<a href="#" class="C_button_N">Сравнить</a>
+							<a href="#" class="pannier_button_n">В корзину</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item">
+					<a href="#" class="dispenser__link">
+						<div class="product_skidka">
+							<span class="skidka">-10%</span>
+						</div>
+						<img src="img/Dispenser.svg" class="pech"></a>
+					<div class="product-list">
+						<div class="product__rate_fl">
+							<img src="img/flstar.svg" alt="" class="glstar">
+							<img src="img/nheart.svg" alt="" class="lover">
+						</div>
+						<div>
+							<h3 class="pechat">Диспенсер настольный Berlingo<br> для канцелярской клейкой<br> ленты, ассорти</h3>
+						<div class="product__price">
+							<span class="new_price">338,27 ₽</span>
+							<span class="old_price_s">475,38 ₽</span>
+						</div>
+						</div>
+						<div class="product__button">
+							<a href="" class="C_button">Сравнить</a>
+							<a href="" class="pannier_button_b">В корзину</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-item">
+					<a href="#" class="folder__link"><img src="img/folder.svg" class="stand"></a>
+					<div class="product-list">
+						<div class="product__rate_fl">
+							<img src="img/flstar.svg" alt="" class="glstar">
+							<img src="img/nheart.svg" alt="" class="lover">
+						</div>
+						<h3 class="pechat">Папка с зажимом Berlingo<br> "Standard", 17мм, 700мкм, синяя</h3>
+						<div class="product__folder__price">
+							<span class="standart_price">54,68 ₽</span>
+						</div>
+						<div class="product__button">
+							<a href="#" class="C_button_N">Сравнить</a>
+							<a href="#" class="pannier_button_n">В корзину</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</footer>
+		<div class="g-pagination">
+			<div class="g-pagination__numbers">
+				<div class="g-pagination__number">1</div>
+				<div class="g-pagination__number">2</div>
+				<div class="g-pagination__number">3</div>
+				<div class="g-pagination__number">4</div>
+				<div class="g-pagination__number">5</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section_up">
+	<div class="bar__up">
+		<img src="img/arrowup.svg" alt=""><a href="#"><span class="bar_text">В начало страницы</span></a>
+	</div>
+</section>
 {% endblock %}

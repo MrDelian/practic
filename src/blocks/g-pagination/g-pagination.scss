@@ -13,11 +13,11 @@
 	cursor: pointer;
 	&:hover
 	{
-		background-color: #ccc;
-		color: #fff;
+		background-color: #f8f8f8;
+		color: black;
 		border-color: transparent;
 	}
-	
+
 }
 .g-pagination__number
 {
@@ -27,7 +27,7 @@
 
 .g-pagination__numbers{display: flex;}
 
-.g-pagination__arrow 
+.g-pagination__arrow
 {
 	&:hover:before{border-left: 17px solid #fff;}
 	&--left{margin-right: 5px;}
